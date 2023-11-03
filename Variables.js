@@ -5,21 +5,21 @@ console.log("Data Types")
 console.log("String")
 
 // Premitive type
-// String
+// String 
 // Number
-// Boolean
+// Boolean 
 // Undefined
 // null
 
 // Non Premitive types 
-// Objects 
+// Objects  : string ,number or object , array can be store.
+// Array : array 
+// set 
 
-
-
-
-// What is mutable and immutable 
+// What is mutable and immutable. 
 
 // Memory Management stake and Heap 
+
 
 
 const pi = 3.14 
@@ -111,7 +111,4 @@ obj2.pin="411033"
 
 console.log("obj1" , obj1)
 console.log("obj2",obj2)
-
-
-
 

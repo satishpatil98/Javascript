@@ -1,20 +1,32 @@
-// Objects in js is descripbe as key valu pares seperated by coma
+// Objects in js is describe as key valu pairs seperated by coma
 // example 
 
-const person = {firstName:"Virat", lastName:"Rohit", age:30, eyeColor:"blue"};
+// to declare alwayas use const. 
+
+let obj1  // declaration 
+
+
+//const obj2 
+const person = {firstName:"Virat", lastName:"Rohit", age:30, eyeColor:"blue"}; // declaration and initialization 
+
 
 // What is diference between varibale declaration and initinalization ?
 
 person.hairColor="black"
 person.fullname = function() {return this.firstName + " " + this.lastName;}
-console.log("person ",person);
-console.log("full name ",person.fullname());
+// console.log("person ",person);
+// console.log("full name ",person.fullname());
 
 // Creating objects
 // 1 ) with object litral as above line number 4
 // using new keyword 
 
-let person1 = new Object()
+const person1 = new Object() /// singaton object  
+person1.name = "satish"
+
+
+
+
 
 // each object have properties and values 
 // Properties can be any string constant example 
@@ -22,8 +34,15 @@ let person1 = new Object()
 
 // how to acces the valuses of property 
 
-console.log(person.firstName)
-console.log(person["firstName"])
+//console.log(person.firstName) // most prefered 
+// console.log(person["firstName"]) //
+
+const obj3 = {"full name":"satish Patil"}
+
+//console.log(obj3["full name"])
+
+
+
 //==========================
 // delete property
 // using delete keyword property can be deleted 
@@ -44,10 +63,56 @@ const myObj = {
   }
   */
 
+  const pageMenu = {"menu": {
+    "id": "file",
+    "value": "File",
+    "popup": {
+      "menuitem": [
+        {"value": "New", "onclick": "CreateNewDoc()"},
+        {"value": "Open", "onclick": "OpenDoc()"},
+        {"value": "Close", "onclick": "CloseDoc()"}
+      ]
+    }
+  }}
+
+console.log("pageMenu",pageMenu);
+console.log(" menu.id",pageMenu.id);
+console.log (" menu ", pageMenu.menu.id)
+console.log (" menu ", pageMenu.menu)
+
+let mumuobj = pageMenu.menu
+console.log(mumuobj.id); 
+// Hoisting 
+
+try {
+  console.log("print  x (let ) before initialize",x)
+  let x = "javascript";  
+//  let x
+} catch (error) {
+  console.log("error ",error);
+}
+var y
+console.log("print y (var) before initialize",y)
+//var y = "javascript";
+//var y;
 
 
+try {
+  console.log("print z(Const) before initialize",z)
+  const z = "javascript";
+} catch (error) {
+ console.log("const error ",error); 
+}
 
 
+try {
+  myfun()
+} catch (error) {
+  console.log("function error ",error);
+}
 
+function myfun(){
+console.log("my function ")
+}
 
 
