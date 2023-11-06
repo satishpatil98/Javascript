@@ -87,8 +87,8 @@ console.log(mumuobj.id);
 try {
   console.log("print  x (let ) before initialize",x)
   let x = "javascript";  
-//  let x
-} catch (error) {
+}
+ catch (error) {
   console.log("error ",error);
 }
 var y
@@ -96,7 +96,7 @@ console.log("print y (var) before initialize",y)
 //var y = "javascript";
 //var y;
 
-
+console.log(" After error / exception")
 try {
   console.log("print z(Const) before initialize",z)
   const z = "javascript";
@@ -116,3 +116,18 @@ console.log("my function ")
 }
 
 
+function fun1(){
+  try {
+    // code logic 
+    
+  } catch (error) {
+    
+  }
+  try {
+    // code logic 
+    
+  } catch (error) {
+    
+  }
+
+}

@@ -14,6 +14,13 @@
 
 // Object Destructuring 
 
+let person = {name:"Ford", models:["Fiesta", "Focus", "Mustang"]}
+
+console.log(" ")
+
+
+
+
 // Object.entries(obj)
 
 // Creating Objects from Another array 
