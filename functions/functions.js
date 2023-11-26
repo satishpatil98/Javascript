@@ -74,12 +74,12 @@ function sum (number1,number2){ // number1 , number2 are parameters  means varia
 
 // what is difference in function reference and function call
 
-let sumref = sum // this is function reference  // Function will not get called only recterence is assinged to varibale 
+let sumref = sum // this is function reference  // Function will not get called only recterence is assinged to varibale. 
 
 let sumofnumber = sum(4,5) // this is called fuction calling 
 
 //console.log("normal function call ",sumofnumber)
-let sumeofnumber2 = sumref(10,20) /// actual function call wo=ith refence name 
+let sumeofnumber2 = sumref(10,20) /// actual function call wo=ith refence name. 
 //console.log("reference function call ",sumeofnumber2)
 
 
