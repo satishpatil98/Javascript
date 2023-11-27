@@ -165,10 +165,10 @@ console.log (typeof total )
 
 
 
-const cars = [1, 2, 3, 4];
+const cars = [1, 2, 3, 4]; // array 
 let text = 0;
 for (let x in cars) {
- // console.log( "x ==",x)
+  console.log( "for array x ==",x)
   text += cars[x] + " ";
 }
 
@@ -184,10 +184,18 @@ const obj = {
   accountnumber: 1234
 }
 
-for (let y in obj){
-  console.log("Y == ",y)
+console.log("Object.keys(obj)", Object.keys(obj))
+
+for (let y in Object.keys(obj)){ // object  
+  console.log(" for in object Y == ",y)
 }
 
+// for of loop only work with array not woth object 
+/*
+for (let y of obj){ // 
+  console.log(" for of object Y == ",y)
+}
+*/
 
 console.log(obj.propertyIsEnumerable("accountnumber"))
 
