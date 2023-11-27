@@ -85,7 +85,7 @@ objPerson1.accountnumber = "231312312312"
 
 
 
-// Rest parameters
+// Rest parameters  ...arguments 
 
 // function to add numbers , 2 , 3 , 4 , 5 , 6 .... 100
 
@@ -111,7 +111,7 @@ function sum(...theArgs) {
     return total;
   }
 
-  console.log(sum(1, 2, 3, 4, 5 ,[6,7,8]));
+  //console.log(sum(1, 2, 3, 4, 5 ,[6,7,8]));
   //15 + 6 + 7 +8 ==
 
 
@@ -132,7 +132,64 @@ function sum(...theArgs) {
 
   
 
-  
+function sumadvance(...theArgs) {
+  let total = 0;
+  for (const arg of theArgs) {   // for of 
+    if (typeof arg === "number"){
+    total += arg;  // explicit type conversion
+    }
+    else if (typeof arg === "object"){
+      for ( const arg1 of arg){ // check for in loop why it return string 
+        total += arg1
+      }
+    }
+    else{
+      console.log(" some part of arumement not a valid number or array of numbers ",arg)
+    }
+
+  console.log (typeof total )
+  }
+console.log (typeof total )
+  return total;
+}
+
+//console.log(sumadvance(1, 2, 3, 4, 5));
+//console.log(sumadvance(1, 2, 3, 4, 5 ,[6,7,8]));
+
+//console.log(sumadvance(1, 2, 3, 4, 5 ,[6,7,8], "a","b"));
+
+//console.log (typeof [6,7,8] ) // array == > obect 
+
+//console.log (typeof 3)
+
+
+
+
+const cars = [1, 2, 3, 4];
+let text = 0;
+for (let x in cars) {
+ // console.log( "x ==",x)
+  text += cars[x] + " ";
+}
+
+for (let x of cars) {
+  //console.log( "x ==",x)
+  text += cars[x] + " ";
+}
+
+
+const obj = {
+  name:"a",
+  address:"b",
+  accountnumber: 1234
+}
+
+for (let y in obj){
+  console.log("Y == ",y)
+}
+
+
+console.log(obj.propertyIsEnumerable("accountnumber"))
 
 
 
