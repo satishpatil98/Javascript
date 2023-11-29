@@ -2,7 +2,7 @@
 // Javascript Object 
 // Data structure /. other languages - Dictionary 
 // Example 
-
+/*
 {
     "employees":[
         {"firstName":"John", "lastName":"Doe"},
@@ -42,4 +42,4 @@ or
 
  // API to comunicate with React and Database   // Ajax // Axios , fetch 
  // Backend Python ,, Node , Java  -- Deal with DB ( SQL , Mongo , File ,) 
- 
+ *
